@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(158, 90, 90);
   color: white;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -22,8 +22,8 @@ h1 {
 }
 
 .board {
-  border: 1rem solid #ff652f;
-  background: #ff652f;
+  border: 1rem solid #743c27;
+  background: #a9421c;
   width: 500px;
   height: 500px;
   display: grid;
@@ -32,7 +32,7 @@ h1 {
 }
 
 .squares {
-  background: #272727;
+  background: #fefefe;
   border: none;
   font-size: 5rem;
   /* font-weight: 800; */
@@ -44,7 +44,7 @@ h1 {
   color: red;
 }
 .O {
-  color: green;
+  color: rgb(9, 79, 9);
 }
 
 .info-wrapper {

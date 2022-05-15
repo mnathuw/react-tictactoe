@@ -1,5 +1,6 @@
-import react from "react";
+import React from "react";
 const Square = ({value, onClick})=>{
+    //
     const style = value? `squares ${value}` : `squares`;
     
     return (
