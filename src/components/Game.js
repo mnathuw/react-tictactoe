@@ -3,10 +3,12 @@ import { calculateWinner } from "../helper";
 import Board from "./Board";
 
 const Game = () => {
+  // set an array of 9 items because it's 3x3 grid. fill each of those items with null by default
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXisNext] = useState(true);
   const winner = calculateWinner(history[stepNumber]);
+  // change each time a cell is clicked. If turn equals x which it does by default
   const xO = xIsNext ? "X" : "O";
 
   const handleClick = (i) => {
@@ -22,6 +24,7 @@ const Game = () => {
     if (winner || squares[i]) return;
     // select square
     squares[i] = xO;
+    // update the state of variable. set cells to squares
     setHistory([...historyPoint, squares]);
     setStepNumber(historyPoint.length);
     setXisNext(!xIsNext);
